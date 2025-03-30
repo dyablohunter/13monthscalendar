@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.calendar-container h2 {text-align: center;}
+
+.calendar {
+  padding: 10px;
+  border-radius: 10px;
+  background: #e7e7e7;
+  min-height: 361px;
+}
+
+.reload {width: 23px; height: 23px; display: inline-block; padding: 3px; border-radius: 30px; background: #380000; vertical-align: middle; cursor: pointer; border: 0; transition: 0.23s all;}
+.reload img {width: 23px; height: 23px;}
+.reload:hover {
+  transform: rotate(180deg);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nav button {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border: 0;
+  background: none;
+}
+
+content {display: block; margin-top: 20px}
+
+.arrow {
+  width: 32px;
+  height: 32px;
+  transition: 0.23s all;
+}
+
+.arrow-right {
+  transform: rotate(180deg);
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.arrow-right:hover {
+  transform: rotate(180deg) scale(1.2);
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.day {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.current-day {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 50%;
+  margin: 0 auto
+}
+
+.selected-day {
+  background-color: rgb(35, 148, 240);
+  color: white;
+  border-radius: 50%;
+  margin: 0 auto
+}
+
+.day-header {
+  font-weight: bold;
+}
+
+/* Reset Button */
+.reset-container {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#reset-today {
+  padding: 5px 15px;
+  cursor: pointer;
+  background: #f0f0f0;
+}
+
+#reset-today:hover {
+  background: #ddd;
+}
+
+/* Code Examples */
+.code-examples {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tab-button {
+  padding: 5px 15px;
+  cursor: pointer;
+  border: 0;
+  background: #f0f0f0;
+}
+
+.tab-button.active {
+  background: #ddd;
+  font-weight: bold;
+}
+
+.tab-content {
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+pre {
+  margin: 0;
+  padding: 10px;
+  background: #f5f5f5;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #eb8787, #b44646);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.6em;
+  line-height: 1.6;
+}
+
+/* Intro Section */
+.intro {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 40px 20px;
+}
+
+.benefits h2 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.benefits li {
+  padding: 20px;
+  background: rgb(238, 240, 219);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.benefits h3 {
+  font-size: 1.5em;
+  color: #b41919;
+  margin-bottom: 10px;
+}
+
+.benefits p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Join Us Section */
+.join-us {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.join-us h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.join-us p {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #4682b4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #eb8787;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 40px 20px;
+  background: #f0f8ff;
+}
+
+.testimonials h2 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials blockquote {
+  padding: 10px;
+  background: white;
+  border-left: 5px solid #4682b4;
+  border-radius: 5px;
+  font-style: italic;
+  color: #555;
+}
+
+.testimonials p {
+  margin: 0 0 10px;
+}
+
+.testimonials cite {
+  display: block;
+  font-style: normal;
+  color: #888;
+  font-size: 0.9em;
+}
+
+h1, h2 {font-family: 'Roboto', Arial, Helvetica, sans-serif}
+
+.btn {
+  border: 0;
+  background: rgb(35, 148, 240) !important;
+  color: white;
+  padding: 12px 23px;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+.op60 {opacity: .6;}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .calendar-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    height: auto; /* Adjusted for mobile */
+    display: block
+  }
+
+  .calendar {
+    height: 35vh; /* Half of 70vh */
+    overflow-y: auto;
+  }
+
+  .calendar.fixed {min-height: 278px;}
+
+  .day {
+    width: 100%;
+    height: 100%;
+    min-height: 40px;
+  }
+
+  .code-examples {
+    height: 30vh; /* Remaining space */
+    overflow-y: auto;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .intro h2,
+  .benefits h2,
+  .join-us h2,
+  .testimonials h2 {
+    font-size: 1.5em;
+  }
+
+  .benefits ul,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  iframe {width: 100%; height: 200px;}
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13 Months Calendar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Prism.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="google_translate_element" style="text-align: center;"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <div class="wrapper">
+      <div class="calendar-container">
+        <div>
+          <h2 style="color: rgb(255, 0, 0)">13 Months Calendar</h2>
+          <div class="calendar fixed">
+            <div class="nav">
+              <span class="reload"><img src="reload.svg"/></span> <button id="fixed-prev"><img class="arrow arrow-left" src="/arrow.svg"/></button>
+              <div id="fixed-title">International Fixed Calendar</div>
+              <button id="fixed-next"><img class="arrow arrow-right" src="/arrow.svg"/></button>
+            </div>
+            <div id="fixed-calendar"></div>
+          </div>
+        </div>
+        <div class="op60">
+          <h2>Regular Calendar</h2>
+          <div class="calendar gregorian">
+            <div class="nav">
+              <button id="greg-prev"><img class="arrow arrow-left" src="/arrow.svg"/></button>
+              <div id="greg-title">Gregorian Calendar</div>
+              <button id="greg-next"><img class="arrow arrow-right" src="/arrow.svg"/></button> <span class="reload"><img src="reload.svg"/></span>
+            </div>
+            <div id="gregorian-calendar"></div>
+          </div>
+        </div>
+      </div>
+
+      <content>
+        <div class="hero">
+          <h1>The 13 Months Calendar</h1>
+          <br />
+          <b>( FREE OPEN SOURCE API )</b>
+          <p>
+            Discover a simpler, more balanced way to track time with the
+            <b>13 months calendar</b>!
+          </p>
+        </div>
+
+        <section class="intro">
+          <h2>Why Switch to 13 Months?</h2>
+          <p>
+            It's also known as the International Fixed
+            Calendar (Mayans, Tartarians and others had it) and it offers a refreshing alternative to the uneven
+            Gregorian system we’ve been stuck with for centuries. Imagine a
+            world where every month is exactly 28 days => 13 tidy months,
+            perfectly aligned for simplicity and consistency.
+          </p>
+        </section>
+
+        <section class="benefits">
+          <h2>Benefits of the 13 Months Calendar</h2>
+          <ul>
+            <li>
+              <h3>Perfect Consistency</h3>
+              <p>
+                Every month has 28 days, meaning every month starts on the same
+                day of the week (say hello to Sunday the 1st, every time!). No
+                more scrambling to figure out if it’s a 30 - or 31-day month.
+              </p>
+            </li>
+            <li>
+              <h3>Easier Planning</h3>
+              <p>
+                Businesses love it because of - monthly schedules, payroll, and
+                budgets becoming more predictable. No more shortchanging
+                February workers!
+              </p>
+            </li>
+            <li>
+              <h3>Cultural Bonus</h3>
+              <p>
+                The new month (13th month of the year), often called “Sol” adds
+                a fresh vibe-perfect for summer solstice parties or mid-year
+                resets! And everyone gets 13 salaries instead of 12 every year!
+              </p>
+            </li>
+            <li>
+              <h3>Yearly Stability</h3>
+              <p>
+                With 364 days (13 × 28), plus a bonus “Intermission day” after
+                28th of Sol month - for the new year transition, and a second
+                Intermission Day every four years. It aligns with the solar year
+                just as well as the Gregorian calendar, but with less chaos.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="join-us">
+          <h2>Join the Revolution</h2>
+          <p>
+            Ready to ditch the Gregorian mess? The 13 months calendar isn’t just
+            a concept - it was used by many advanced civilisations in the past
+            and recently by Eastman Kodak from 1928 to 1989! Let’s bring it
+            back, one perfectly balanced month at a time.
+          </p>
+          <br />
+          <h2>As seen on:</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/P0SliWBu304?si=c1qxMVDFrE7nVXGz"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <br />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/rTJ5g4S_U5E?si=zBOoXU5V2raO48rF"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <!-- <a href="#" class="cta-button">Learn More</a> -->
+        </section>
+
+        <section class="testimonials">
+          <h2>Funny Facts & Testimonials</h2>
+          <div class="testimonial-grid">
+            <blockquote>
+              <p>
+                “I used to dread February-28 days felt like a cruel joke. Now
+                with 13 months, every month is a fair fight!”
+              </p>
+              <cite>- Bob, Former February Hater</cite>
+            </blockquote>
+            <blockquote>
+              <p>
+                “I told my boss we switched to 13 months, and he gave me an
+                extra paycheck. True story!”
+              </p>
+              <cite>- Sally, Optimistic Accountant</cite>
+            </blockquote>
+            <blockquote>
+              <p>
+                “The extra ‘Year Day’ is my new birthday. No one can argue with
+                that logic!”
+              </p>
+              <cite>- Tim, Self-Proclaimed Time Lord</cite>
+            </blockquote>
+            <blockquote>
+              <p>
+                “I tried explaining it to my cat. She just stared at me for 28
+                days straight.”
+              </p>
+              <cite>- Jen, Cat Whisperer</cite>
+            </blockquote>
+          </div>
+        </section>
+      </content>
+
+      <div class="code-examples" id="today-examples">
+        <h2>
+          API code examples for route
+          <a href="https://13monthscalendar.com/today" target="_blank"
+            >/today</a
+          >
+        </h2>
+        <b>Preview in browser:</b>
+        <a href="https://13monthscalendar.com/today" target="_blank"
+          >https://13monthscalendar.com/today</a
+        ><br /><br />
+        <div class="tabs">
+          <button class="tab-button active" data-tab="js-today">
+            JavaScript
+          </button>
+          <button class="tab-button" data-tab="python-today">Python</button>
+          <button class="tab-button" data-tab="java-today">Java</button>
+          <button class="tab-button" data-tab="csharp-today">C#</button>
+          <button class="tab-button" data-tab="ruby-today">Ruby</button>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active" id="js-today">
+            <pre><code class="language-javascript">
+  fetch('https://13monthscalendar.com/today')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="python-today">
+            <pre><code class="language-python">
+  import requests
+  
+  try:
+      response = requests.get('https://13monthscalendar.com/today')
+      data = response.json()
+      print(data)
+  except Exception as e:
+      print(f"Error: {e}")
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="java-today">
+            <pre><code class="language-java">
+  import java.net.HttpURLConnection;
+  import java.net.URL;
+  import java.util.Scanner;
+  
+  public class Main {
+      public static void main(String[] args) {
+          try {
+              URL url = new URL("https://13monthscalendar.com/today");
+              HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+              conn.setRequestMethod("GET");
+              Scanner scanner = new Scanner(conn.getInputStream());
+              StringBuilder response = new StringBuilder();
+              while (scanner.hasNext()) {
+                  response.append(scanner.nextLine());
+              }
+              scanner.close();
+              System.out.println(response.toString());
+          } catch (Exception e) {
+              e.printStackTrace();
+          }
+      }
+  }
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="csharp-today">
+            <pre><code class="language-csharp">
+  using System;
+  using System.Net.Http;
+  using System.Threading.Tasks;
+  
+  class Program {
+      static async Task Main() {
+          using (var client = new HttpClient()) {
+              try {
+                  var response = await client.GetStringAsync("https://13monthscalendar.com/today");
+                  Console.WriteLine(response);
+              } catch (Exception ex) {
+                  Console.WriteLine($"Error: {ex.Message}");
+              }
+          }
+      }
+  }
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="ruby-today">
+            <pre><code class="language-ruby">
+  require 'net/http'
+  require 'json'
+  
+  begin
+    uri = URI('https://13monthscalendar.com/today')
+    response = Net::HTTP.get(uri)
+    data = JSON.parse(response)
+    puts data
+  rescue StandardError => e
+    puts "Error: #{e.message}"
+  end
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="code-examples" id="convert-examples">
+        <h2>
+          API code examples for route
+          <a
+            href="https://13monthscalendar.com/convert?date=2025-03-27&toCalendar=fixed"
+            target="_blank"
+            >/convert</a
+          >
+        </h2>
+        <b>Preview in browser:</b><br>
+        <a
+          href="https://13monthscalendar.com/convert?date=2025-M03-27&toCalendar=regular"
+          target="_blank"
+          >https://13monthscalendar.com/convert?date=2025-M03-27&toCalendar=regular</a
+        ><br />
+        <a
+          href="https://13monthscalendar.com/convert?date=2025-03-27&toCalendar=fixed"
+          target="_blank"
+          >https://13monthscalendar.com/convert?date=2025-03-27&toCalendar=fixed</a
+        ><br /><br />
+        <div class="tabs">
+          <button class="tab-button active" data-tab="js-calculate">
+            JavaScript
+          </button>
+          <button class="tab-button" data-tab="python-calculate">Python</button>
+          <button class="tab-button" data-tab="java-calculate">Java</button>
+          <button class="tab-button" data-tab="csharp-calculate">C#</button>
+          <button class="tab-button" data-tab="ruby-calculate">Ruby</button>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active" id="js-calculate">
+            <pre><code class="language-javascript">
+  fetch('https://13monthscalendar.com/convert?date=2025-03-27&toCalendar=fixed')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="python-calculate">
+            <pre><code class="language-python">
+  import requests
+  
+  try:
+      response = requests.get('https://13monthscalendar.com/convert?date=2025-03-27&toCalendar=fixed')
+      data = response.json()
+      print(data)
+  except Exception as e:
+      print(f"Error: {e}")
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="java-calculate">
+            <pre><code class="language-java">
+  import java.net.HttpURLConnection;
+  import java.net.URL;
+  import java.util.Scanner;
+  
+  public class Main {
+      public static void main(String[] args) {
+          try {
+              URL url = new URL("https://13monthscalendar.com/convert?date=2025-03-27&toCalendar=fixed");
+              HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+              conn.setRequestMethod("GET");
+              Scanner scanner = new Scanner(conn.getInputStream());
+              StringBuilder response = new StringBuilder();
+              while (scanner.hasNext()) {
+                  response.append(scanner.nextLine());
+              }
+              scanner.close();
+              System.out.println(response.toString());
+          } catch (Exception e) {
+              e.printStackTrace();
+          }
+      }
+  }
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="csharp-calculate">
+            <pre><code class="language-csharp">
+  using System;
+  using System.Net.Http;
+  using System.Threading.Tasks;
+  
+  class Program {
+      static async Task Main() {
+          using (var client = new HttpClient()) {
+              try {
+                  var response = await client.GetStringAsync("https://13monthscalendar.com/convert?date=2025-03-27&toCalendar=fixed");
+                  Console.WriteLine(response);
+              } catch (Exception ex) {
+                  Console.WriteLine($"Error: {ex.Message}");
+              }
+          }
+      }
+  }
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="ruby-calculate">
+            <pre><code class="language-ruby">
+  require 'net/http'
+  require 'json'
+  
+  begin
+    uri = URI('https://13monthscalendar.com/convert?date=2025-03-27&toCalendar=fixed')
+    response = Net::HTTP.get(uri)
+    data = JSON.parse(response)
+    puts data
+  rescue StandardError => e
+    puts "Error: #{e.message}"
+  end
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="wrapper">
+      <h2>But wait, there's more!</h2>
+        There is an even better calendar: <a href="https://360.org" target="_blank">360days.org</a><br /><br />
+        Email me at: <a href="mailto:admin@13monthscalendar.com" target="_blank">admin@13monthscalendar.com</a><br /><br />
+    </footer>
+    <script src="script.js"></script>
+    <!-- Prism.js JS with corrected integrity -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
